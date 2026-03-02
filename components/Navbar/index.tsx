@@ -20,7 +20,7 @@ export default function Navbar() {
     const navLinks = [
         { href: '/menu', label: 'Menu' },
         { href: '/reservation', label: 'Reservation' },
-        { href: '/', label: 'Contact' },
+        { href: '#contact', label: 'Contact' },
     ];
 
     return (

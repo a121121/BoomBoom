@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const images = [
-    '/assets/hero1.webp',
-    '/assets/hero2.webp',
+    '/assets/hero11.webp',
+    '/assets/hero22.webp',
 ];
 
 export default function HeroSection() {
