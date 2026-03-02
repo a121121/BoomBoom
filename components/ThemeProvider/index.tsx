@@ -1,44 +1,24 @@
 "use client";
-import React, { createContext, useContext, useEffect, useState } from 'react';
-
-type Theme = 'light' | 'dark';
+import React, { createContext, useContext } from "react";
 
 interface ThemeContextType {
-    theme: Theme;
+    theme: "light";
     toggleTheme: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextType>({
-    theme: 'dark',
+    theme: "light",
     toggleTheme: () => { },
 });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-    const [theme, setTheme] = useState<Theme>('dark');
-    const [mounted, setMounted] = useState(false);
-
-    // On mount → read saved preference or default to dark
-    useEffect(() => {
-        const savedTheme = (localStorage.getItem('theme') as Theme) || 'dark';
-        setTheme(savedTheme);
-        document.documentElement.classList.toggle('dark', savedTheme === 'dark');
-        setMounted(true);
-    }, []);
-
+    // No state, always light
     const toggleTheme = () => {
-        const newTheme = theme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-        localStorage.setItem('theme', newTheme);
-        document.documentElement.classList.toggle('dark', newTheme === 'dark');
+        // do nothing, no dark mode
     };
 
-    // Prevent hydration mismatch / flash
-    if (!mounted) {
-        return <>{children}</>;
-    }
-
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <ThemeContext.Provider value={{ theme: "light", toggleTheme }}>
             {children}
         </ThemeContext.Provider>
     );
@@ -46,8 +26,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
 export function useTheme() {
     const context = useContext(ThemeContext);
-    if (context === undefined) {
-        throw new Error('useTheme must be used within a ThemeProvider');
+    if (!context) {
+        throw new Error("useTheme must be used within a ThemeProvider");
     }
     return context;
 }

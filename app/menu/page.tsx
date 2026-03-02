@@ -4,7 +4,8 @@
 // No data fetching here; the client component fetches /menu-data.json itself.
 
 import type { Metadata } from "next";
-import MenuPage from "@/components/menu/MenuPage";
+import MenuSection from "@/components/MenuSection";
+import { menuData } from "@/data/menu";
 import Divider from "@/components/Divider";
 import { siteConfig } from "@/config/site";
 
@@ -16,7 +17,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <MenuPage />
+      {menuData.menu.map((cat) => (
+        <MenuSection key={cat.category} category={cat} />
+      ))}
       <Divider />
     </>);
 }

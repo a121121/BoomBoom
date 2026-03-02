@@ -113,7 +113,7 @@ export default function Contact() {
                     </motion.div>
 
                     {/* Overlay */}
-                    <motion.div
+                    {/* <motion.div
                         className="absolute inset-0 bg-black/20"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
@@ -126,7 +126,7 @@ export default function Contact() {
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true }}
-                    />
+                    /> */}
 
                     {/* Text */}
                     <motion.div
@@ -136,7 +136,7 @@ export default function Contact() {
                         transition={{ duration: 0.6, delay: 0.4 }}
                         viewport={{ once: true }}
                     >
-                        <h3 className="text-6xl uppercase tracking-wide text-center">Get In touch</h3>
+                        <h3 className="text-6xl uppercase tracking-wide text-center boomboom">Get In touch</h3>
                     </motion.div>
                 </motion.div>
 
@@ -153,13 +153,13 @@ export default function Contact() {
                         variants={containerVariants}
                     >
                         <motion.div
-                            className="w-full md:w-1/2 h-auto md:h-full md:min-h-[350px] bg-background rounded-xl border royal-card"
+                            className="w-full md:w-1/2 h-auto md:h-full md:min-h-[350px] bg-background rounded-xl border "
                             variants={scaleIn}
                             whileHover={{ y: -5, transition: { duration: 0.3 } }}
                         >
                             <div className='flex flex-col justify-center items-start p-6 text-foreground gap-6 h-full'>
                                 <motion.h3
-                                    className='text-3xl uppercase tracking-wide'
+                                    className='text-3xl uppercase tracking-wide boomboom'
                                     initial={{ opacity: 0, x: -20 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.5, delay: 0.2 }}
@@ -186,13 +186,13 @@ export default function Contact() {
                             </div>
                         </motion.div>
                         <motion.div
-                            className="w-full md:w-1/2 h-auto md:h-full md:min-h-[350px] bg-background rounded-xl border royal-card"
+                            className="w-full md:w-1/2 h-auto md:h-full md:min-h-[350px] bg-background rounded-xl border "
                             variants={scaleIn}
                             whileHover={{ y: -5, transition: { duration: 0.3 } }}
                         >
                             <div className='flex flex-col justify-center items-start p-6 text-foreground gap-4 h-full'>
                                 <motion.h3
-                                    className='text-3xl uppercase tracking-wide'
+                                    className='text-3xl uppercase tracking-wide boomboom'
                                     initial={{ opacity: 0, x: -20 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.5, delay: 0.2 }}

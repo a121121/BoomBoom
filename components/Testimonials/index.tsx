@@ -70,7 +70,7 @@ export default function Testimonials() {
                             transition={{ duration: 0.35 }}
                             className="cursor-grab active:cursor-grabbing"
                         >
-                            <div className="relative p-6 sm:p-8 lg:p-10 rounded-2xl backdrop-blur-xl border border-border shadow-xl dark:shadow-2xl dark:shadow-black/50 space-y-5 sm:space-y-6 min-h-[500px] sm:min-h-[420px] flex flex-col justify-center select-none transition-all duration-300 royal-card">
+                            <div className="relative p-6 sm:p-8 lg:p-10 rounded-2xl backdrop-blur-xl border border-border shadow-xl dark:shadow-2xl dark:shadow-black/50 space-y-5 sm:space-y-6 min-h-[500px] sm:min-h-[420px] flex flex-col justify-center select-none transition-all duration-300 bg-white">
 
                                 {/* Quote Icon */}
                                 <div className="absolute top-6 right-6 opacity-[0.07]">
@@ -155,7 +155,7 @@ export default function Testimonials() {
                         className="text-center lg:text-left w-full lg:w-1/2"
                     >
                         <motion.h2
-                            className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl text-foreground uppercase leading-tight"
+                            className="mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl uppercase leading-tight boomboom"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}

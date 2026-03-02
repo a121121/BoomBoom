@@ -66,8 +66,8 @@ export default function Footer() {
                     </div>
 
                     {/* Brand — true center */}
-                    <h3 className="order-1 md:order-2 text-2xl font-light tracking-[0.35em] uppercase text-foreground text-center">
-                        Qiolia
+                    <h3 className="order-1 md:order-2 text-2xl font-light uppercase  text-center boomboom">
+                        Boom Boom
                     </h3>
 
                     {/* Copyright — right */}

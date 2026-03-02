@@ -1,6 +1,6 @@
 export const siteConfig = {
-    name: "Qiolia",
-    description: "Experience the authentic taste of tradition",
+    name: "BoomBoom",
+    description: "Sab se acha, sab se tasty",
     url: "https://yourrestaurant.com",
     logo: "/logo.png",
     phone: "+1234567890",

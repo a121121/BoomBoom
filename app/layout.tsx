@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Forum, Inter } from "next/font/google"
+import { Anton, Inter } from "next/font/google"
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { siteConfig } from "@/config/site";
 
-const forum = Forum({
+const anton = Anton({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-forum",
+  variable: "--font-anton",
 })
 
 const inter = Inter({
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${forum.variable} ${inter.variable}`}>
+    <html lang="en" className={`${anton.variable} ${inter.variable}`}>
       <body
         className={`antialiased`}
       >

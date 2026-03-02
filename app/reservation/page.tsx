@@ -18,7 +18,7 @@ export default function ReservationPage() {
           </div>
 
           {/* Right — Form */}
-          <div className="flex flex-col justify-center px-6 py-12 sm:px-10 lg:px-14 xl:px-20 royal-card border">
+          <div className="flex flex-col justify-center px-6 py-12 sm:px-10 lg:px-14 xl:px-20 border">
             <div className="w-full max-w-lg mx-auto">
               {/* Form header */}
               <div className="mb-8 space-y-1">

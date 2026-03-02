@@ -16,7 +16,7 @@ const ScrollingNewsBar: React.FC<ScrollingNewsBarProps> = ({
     const duplicatedMessage = `${message} • ${message} • ${message} • ${message}`;
 
     return (
-        <div className="relative w-full overflow-hidden py-4 lg:py-6 bg-foreground my-10">
+        <div className="relative w-full overflow-hidden py-4 lg:py-6 bg-accent my-10">
             <div className="flex whitespace-nowrap">
                 {/* First scrolling instance */}
                 <motion.div

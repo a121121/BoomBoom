@@ -16,10 +16,10 @@ export default function ReservationHero() {
 
             {/* Heading at bottom-right */}
             <div className="absolute bottom-8 right-8 text-right">
-                <p className="text-muted-foreground text-xs tracking-[0.3em] uppercase mb-2 font-light">
-                    Fine Dining
+                <p className="text-background text-xs tracking-[0.3em] uppercase mb-2 font-light">
+                    A taste to remember
                 </p>
-                <h1 className="uppercase text-foreground font-display text-4xl lg:text-5xl xl:text-6xl font-light leading-tight tracking-wider">
+                <h1 className="uppercase text-4xl lg:text-5xl xl:text-6xl boomboom">
                     Book a Table
                 </h1>
             </div>
