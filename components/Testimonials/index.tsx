@@ -57,13 +57,6 @@ export default function Testimonials() {
             style={{ background: "linear-gradient(135deg, #fff5f5 0%, #fff 50%, #fff8f0 100%)" }}
             id="testimonials"
         >
-            {/* Import fonts */}
-            <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Nunito:wght@400;600;700;800&display=swap');
-        .font-boogaloo { font-family: 'Boogaloo', cursive; }
-        .font-nunito { font-family: 'Nunito', sans-serif; }
-      `}</style>
-
             {/* Decorative background blobs */}
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-red-100 opacity-60 blur-3xl" />
@@ -107,7 +100,7 @@ export default function Testimonials() {
                     viewport={{ once: true }}
                 >
                     <div className="inline-block relative mb-3">
-                        <span className="font-boogaloo text-5xl sm:text-6xl lg:text-7xl text-red-600 tracking-wide drop-shadow-sm">
+                        <span className="font-heading text-5xl sm:text-6xl lg:text-7xl text-red-600 tracking-wide drop-shadow-sm">
                             Our Happy Diners
                         </span>
                         {/* Underline squiggle */}
@@ -115,7 +108,7 @@ export default function Testimonials() {
                             <path d="M0,6 Q37.5,0 75,6 Q112.5,12 150,6 Q187.5,0 225,6 Q262.5,12 300,6" fill="none" stroke="#f97316" strokeWidth="3.5" strokeLinecap="round" />
                         </svg>
                     </div>
-                    <p className="font-nunito text-gray-500 text-base sm:text-lg mt-5 max-w-xl mx-auto">
+                    <p className="font-body text-gray-500 text-base sm:text-lg mt-5 max-w-xl mx-auto">
                         Real people, real smiles, real food comas 🍴
                     </p>
                 </motion.div>
@@ -147,7 +140,7 @@ export default function Testimonials() {
                                 onDragEnd={handleSwipe}
                                 className="cursor-grab active:cursor-grabbing relative"
                             >
-                                <div className={`relative bg-white rounded-3xl p-7 sm:p-9 border-2 ${color.border} shadow-xl ${color.shadow} font-nunito`}>
+                                <div className={`relative bg-white rounded-3xl p-7 sm:p-9 border-2 ${color.border} shadow-xl ${color.shadow} font-body`}>
 
                                     {/* Top accent stripe */}
                                     <div className={`absolute top-0 left-8 right-8 h-1.5 ${color.bg} rounded-b-full`} />
@@ -197,11 +190,11 @@ export default function Testimonials() {
                                         </div>
 
                                         {/* Big quote mark */}
-                                        <div className={`text-6xl font-boogaloo leading-none ${color.text} opacity-30 mt-1`}>&ldquo;</div>
+                                        <div className={`text-6xl font-heading leading-none ${color.text} opacity-30 mt-1`}>&ldquo;</div>
                                     </div>
 
                                     {/* Review title */}
-                                    <h3 className="font-boogaloo text-2xl sm:text-3xl text-gray-800 mb-3 leading-snug">
+                                    <h3 className="font-heading text-2xl sm:text-3xl text-gray-800 mb-3 leading-snug">
                                         {t.title}
                                     </h3>
 
@@ -213,7 +206,7 @@ export default function Testimonials() {
                                     </div>
 
                                     {/* Swipe hint on mobile */}
-                                    <p className="lg:hidden text-center text-xs text-gray-400 mt-3 font-nunito">
+                                    <p className="lg:hidden text-center text-xs text-gray-400 mt-3 font-body">
                                         ← Swipe to see more reviews →
                                     </p>
 
@@ -270,13 +263,13 @@ export default function Testimonials() {
                     >
                         {/* Sticker tag */}
                         <motion.div
-                            className="inline-flex items-center gap-2 bg-red-600 text-white font-boogaloo text-lg px-5 py-2 rounded-full shadow-lg shadow-red-300 mb-6 rotate-[-2deg]"
+                            className="inline-flex items-center gap-2 bg-red-600 text-white font-heading text-lg px-5 py-2 rounded-full shadow-lg shadow-red-300 mb-6 rotate-[-2deg]"
                             whileHover={{ rotate: 2, scale: 1.04 }}
                         >
                             <span>🔥</span> Loved by 3000+ happy customers
                         </motion.div>
 
-                        <h2 className="font-boogaloo text-4xl sm:text-5xl lg:text-6xl text-gray-800 leading-tight mb-4">
+                        <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-gray-800 leading-tight mb-4">
                             Real Flavours,{" "}
                             <br />
                             <span className="text-red-600 relative inline-block">
@@ -288,7 +281,7 @@ export default function Testimonials() {
                             </span>
                         </h2>
 
-                        <p className="font-nunito text-gray-500 text-base sm:text-lg leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
+                        <p className="font-body text-gray-500 text-base sm:text-lg leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
                             Don't just take our word for it — our guests say it better than we ever could. Every dish cooked with soul, every visit a memory.
                         </p>
 
@@ -306,7 +299,7 @@ export default function Testimonials() {
                                     transition={{ delay: 0.4 + i * 0.12, duration: 0.5 }}
                                     viewport={{ once: true }}
                                     whileHover={{ y: -4, scale: 1.04 }}
-                                    className={`flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-white border-2 ${ACCENT_COLORS[i].border} shadow-md font-nunito cursor-default`}
+                                    className={`flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-white border-2 ${ACCENT_COLORS[i].border} shadow-md font-body cursor-default`}
                                 >
                                     <span className="text-2xl">{stat.emoji}</span>
                                     <div className="text-left">

@@ -26,7 +26,7 @@ export default function Home() {
         speed={25}
       />
       <Contact />
-      <Divider />
+      {/* <Divider /> */}
 
     </main>
   );
