@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { siteConfig } from "@/config/site";
+import { CartProvider } from "@/components/CartProvider";
+import CartSheet from "@/components/CartSheet";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -33,9 +35,12 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <ThemeProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <CartProvider>
+            <Navbar />
+            <CartSheet />
+            {children}
+            <Footer />
+          </CartProvider>
         </ThemeProvider>
       </body>
     </html>

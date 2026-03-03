@@ -21,10 +21,15 @@ export default function HeroSection() {
 
     return (
         <section
-            className="relative mx-auto w-full overflow-hidden"
+            className="
+    relative mx-auto w-full overflow-hidden
+    h-[45vh] 
+    sm:h-[55vh] 
+    md:h-[60vh] 
+    lg:h-[65vh]
+  "
             role="banner"
             aria-label="Boom Boom Website Banner"
-            style={{ height: '65vh', maxHeight: '65vh' }}
         >
             {/* Image Carousel */}
             {images.map((src, index) => (
