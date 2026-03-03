@@ -19,7 +19,7 @@ export default function Home() {
       />
       {/* <About /> */}
       <FeaturedDishes items={menuData.menu.flatMap((cat) => cat.items)} />
-      <Divider />
+      {/* <Divider /> */}
       <Testimonials />
       <ScrollingNewsBar
         message="Ramadan Deal now on - Buy 1 Large Pizza Get 1 Small Free"
