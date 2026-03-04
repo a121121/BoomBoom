@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { useCart } from '../CartProvider';
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
-const WHATSAPP_NUMBER = '923360941781'; // ← Replace with your number (no +, no spaces)
+const WHATSAPP_NUMBER = '923310405737'; // ← Replace with your number (no +, no spaces)
 // e.g. for +92 300 1234567 → '923001234567'
 // ─────────────────────────────────────────────────────────────────────────────
 

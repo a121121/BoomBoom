@@ -285,3 +285,19 @@
     font-size: 20px !important;
   }
 }
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@utility animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}

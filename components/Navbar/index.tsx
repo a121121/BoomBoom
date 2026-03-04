@@ -20,9 +20,9 @@ export default function Navbar() {
     }, []);
 
     const navLinks = [
-        { href: '/menu', label: 'Menu', emoji: '🍽️' },
-        { href: '/reservation', label: 'Reservation', emoji: '📅' },
-        { href: '#contact', label: 'Contact', emoji: '📍' },
+        { href: '/menu', label: 'Menu', emoji: '' },
+        { href: '/reservation', label: 'Reservation', emoji: '' },
+        { href: '#contact', label: 'Contact', emoji: '' },
     ];
 
     return (
@@ -36,11 +36,7 @@ export default function Navbar() {
                 )}
             >
                 {/* Top zigzag accent */}
-                <div className="absolute bottom-0 left-0 right-0 overflow-hidden h-[3px] pointer-events-none">
-                    <svg className="w-full h-full" viewBox="0 0 1200 3" preserveAspectRatio="none">
-                        <polyline points="0,3 30,0 60,3 90,0 120,3 150,0 180,3 210,0 240,3 270,0 300,3 330,0 360,3 390,0 420,3 450,0 480,3 510,0 540,3 570,0 600,3 630,0 660,3 690,0 720,3 750,0 780,3 810,0 840,3 870,0 900,3 930,0 960,3 990,0 1020,3 1050,0 1080,3 1110,0 1140,3 1170,0 1200,3" fill="none" stroke="#dc2626" strokeWidth="3" />
-                    </svg>
-                </div>
+
 
                 <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 

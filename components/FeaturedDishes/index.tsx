@@ -68,7 +68,7 @@ const FeaturedDishes: React.FC<FeaturedDishesProps> = ({
 
 
                     <div className="inline-block relative">
-                        <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl uppercase text-gray-800 leading-tight">
+                        <h2 className="font-heading text-5xl lg:text-6xl uppercase text-gray-800 leading-tight">
                             Pakistan ka Best{" "}
                             <span className="text-red-600 relative inline-block">
                                 Roll Paratha

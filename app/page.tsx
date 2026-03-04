@@ -8,6 +8,7 @@ import { menuData } from "@/data/menu";
 import MenuSection from "@/components/MenuSection";
 import Testimonials from '@/components/Testimonials';
 import FeaturedDishes from '@/components/FeaturedDishes';
+import OrderNowButton from '@/components/OrderNowButton';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         message="Ramadan Deal now on - Buy 1 Large Pizza Get 1 Small Free"
         speed={25}
       />
+      <OrderNowButton />
       <Contact />
       {/* <Divider /> */}
 
